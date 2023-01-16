@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/personImage"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            android:layout_toRightOf="@+id/personImage"
+            android:layout_marginTop="18dp"
+            android:padding="2dp"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:id="@+id/txt_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your email"
+        android:layout_toRightOf="@+id/personImage"
+        android:layout_below="@+id/txt_name"
+        android:id="@+id/txt_email"
+        android:visibility="gone"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to sign In"
+        android:layout_toRightOf="@+id/personImage"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:id="@+id/signIn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/personImage"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l1"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/contactUs"
+        android:layout_below="@+id/l1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/contactUs"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l2"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/aboutUs"
+        android:layout_below="@+id/l2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/aboutUs"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l3"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Terms &amp; Condition"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/privacyPolicy"
+        android:layout_below="@+id/l3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/privacyPolicy"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l4"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track Order"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/trackOrder"
+        android:layout_below="@+id/l4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/trackOrder"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l6"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Orders"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/myOrder"
+        android:visibility="gone"
+        android:layout_below="@+id/l6"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/myOrder"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l7"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:textColor="#000"
+        android:id="@+id/logout"
+        android:visibility="gone"
+        android:layout_below="@+id/l7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/logout"
+        android:background="#d4d4d4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/l5"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal" />
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:text=""
+                android:background="@drawable/txt_t"
+                android:textColor="#fff"
+                android:textSize="11dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/txt_saleTxt"/>
+
+            <ImageView
+                android:id="@+id/saleImg"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:fitsSystemWindows="true"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/txt_saleTxt"
+                android:layout_centerHorizontal="true"
+                 />
+
+            <TextView
+                android:id="@+id/saleitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zilver Bar Grab Angle"
+                android:layout_below="@+id/saleImg"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="10dp"
+                android:layout_margin="5dp"
+                />
+
+
+
+
+            <TextView
+                android:id="@+id/saleItem_Afterprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs:0"
+                android:textSize="10dp"
+                android:layout_below="@+id/saleitem_title"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+            <Button
+                android:id="@+id/saleCartButton"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:text="Add To Cart"
+                android:visibility="gone"
+                android:background="@drawable/txt_t"
+                android:layout_marginBottom="5dp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/saleItem_Afterprice"
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

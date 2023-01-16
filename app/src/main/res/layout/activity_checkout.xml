@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckoutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Personal Information"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:id="@+id/txt"
+        />
+
+    <EditText
+        android:layout_below="@+id/txt"
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+    <EditText
+        android:layout_below="@+id/edt_username"
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:padding="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shipping Detail :"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="20dp"
+                android:id="@+id/txt_shiping"
+                android:layout_below="@+id/edt_email"
+                />
+
+            <EditText
+                android:layout_below="@+id/txt_shiping"
+                android:id="@+id/edt_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_fullname"
+                android:id="@+id/edt_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_phone"
+                android:id="@+id/edt_emailshipping"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_emailshipping"
+                android:id="@+id/edt_shippingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Shipping Address"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_shippingAddress"
+                android:id="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Country"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_country"
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="City"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:layout_below="@+id/edt_city"
+                android:id="@+id/edt_postalCode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Postal Code"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/prgbr"/>
+</RelativeLayout>

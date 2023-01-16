@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailMarketing">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        android:visibility="gone"
+        android:layout_marginBottom="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_products"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/gb" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al Fateh,Anex,Small"
+                android:padding="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/txt_nameProduct"
+                android:layout_below="@+id/img_products"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_nameProduct"
+                android:text="2000"
+                android:textColor="#000"
+                android:padding="2dp"
+                android:id="@+id/txt_perAfterPrice"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:layout_below="@+id/txt_perAfterPrice"
+                android:text="Descrition"
+                android:padding="5dp"
+                android:textSize="16dp"
+                />
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#F44336"
+            android:text=" Seller Info "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:drawablePadding="5dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_info"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#3F51B5"
+            android:text=" Email To Seller "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:drawablePadding="5dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_email"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#4CAF50"
+            android:text=" Call To Seller "
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:drawablePadding="5dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btn_call"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

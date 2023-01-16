@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:id="@+id/img_product"
+        app:srcCompat="@drawable/gb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_CatnameProduct"
+        android:layout_marginTop="5dp"
+        android:text="Doll"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_nameProduct"
+        android:text="Doll"
+        android:visibility="gone"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs:"
+        android:visibility="gone"
+        android:id="@+id/txt_rupees"
+        android:layout_below="@+id/txt_nameProduct"
+        android:layout_toRightOf="@+id/img_product"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2000"
+        android:layout_toRightOf="@+id/txt_rupees"
+        android:layout_below="@+id/txt_CatnameProduct"
+        android:id="@+id/txt_rate"
+        />
+
+
+    <TextView
+        android:layout_below="@id/txt_rate"
+        android:id="@+id/edt_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="9dp"
+        android:layout_toEndOf="@+id/btn_minusQty"
+        android:text="1"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLines="1"
+        android:textSize="17dp"
+        android:textColor="#000"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/img_product"
+        />
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/add_btn"
+        android:layout_toRightOf="@+id/edt_qty"
+        android:layout_below="@id/txt_rate"
+        android:id="@+id/btn_addQty"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/remove_btn"
+        android:layout_toEndOf="@+id/img_product"
+        android:layout_below="@id/txt_rate"
+        android:id="@+id/btn_minusQty"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+
+        android:layout_marginLeft="5dp"
+        android:background="@android:color/transparent"
+        android:layout_toRightOf="@+id/img_product" />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/ic_remove_shopping_cart_black_24dp"
+        android:id="@+id/btn_remove"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        tools:ignore="VectorDrawableCompat" />
+
+
+
+
+
+
+</RelativeLayout>
